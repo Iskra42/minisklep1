@@ -19,7 +19,7 @@
             <div class="col-md-6">
                 <div class="card shadow">
                     <div class="card-body">
-                        <h3 class="card-title text-center mb-4">Dodaj produkt</h3>
+                        <h3 class="card-title text-center mb-3">Dodaj produkt</h3>
                         <form method="POST" action="/add/">
                             {% csrf_token %}
                             <div class="mb-3">
@@ -32,7 +32,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="price" class="form-label">Cena</label>
-                                <input type="number" name="price" class="form-control" step="0.01" required>
+                                <input type="number" name="price" class="form-control" step="0.1" required>
                             </div>
                             <div class="d-grid">
                                 <button type="submit" class="btn btn-success">Zatwierdź</button>
