@@ -13,7 +13,7 @@ def login_view(request):
             login(request, user)
             return redirect('product_list')
         else:
-            return render(request, 'login.html', {'error': 'Nieprawidłowe dane logowania'})
+            return render(request, 'login.html', {'error': 'Nieprawidłowe dane do logowania'})
     return render(request, 'login.html')
 
 
